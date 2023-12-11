@@ -1,6 +1,5 @@
 streamlit
 matplotlib
-io
 torch
 torchaudio
 pyaudio
