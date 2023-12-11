@@ -9,6 +9,5 @@ librosa
 soundfile
 tensorflow
 tensorflow_hub
-csv
 numpy
 pandas
