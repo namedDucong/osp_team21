@@ -1,3 +1,5 @@
+# Specify a minimum Python version
+pip == 23.3.1
 streamlit
 matplotlib
 torch
