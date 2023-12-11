@@ -2,7 +2,7 @@ streamlit
 matplotlib
 torch
 torchaudio
-pyaudio
+Pyaudio
 omegaconf
 pygame
 librosa
