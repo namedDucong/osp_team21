@@ -16,6 +16,8 @@ import csv
 import librosa
 # from utils_vad import calculate_noise_level, int2float, calculate_loudness
 
+
+
 st.title('Fall detection')
 
 
@@ -205,7 +207,9 @@ audio = pyaudio.PyAudio()
 
 
 # Initialize audio stream and pre-record for noise measurement
-stream = pyaudio.PyAudio().open(format=FORMAT, channels=CHANNELS, rate=SAMPLE_RATE, input=True, frames_per_buffer=CHUNK)
+stream = pyaudio.PyAudio().open(format=FORMAT, channels=CHANNELS, rate=SAMPLE_RATE, input=True, frames_per_buffer=CHUNK, input_device_index=0)
+
+# stream = pyaudio.PyAudio().open(format=FORMAT, channels=CHANNELS, rate=SAMPLE_RATE, input=True, frames_per_buffer=CHUNK)
 
 # 슬라이드 바를 통해 노이즈 레벨을 측정하는 함수
 def measure_noise_level(duration_sec):
